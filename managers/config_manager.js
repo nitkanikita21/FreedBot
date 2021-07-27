@@ -1,6 +1,10 @@
 
 module.exports = class ConfigManager {
     #config = require("../config.json")
-    #private_config = require('dotenv').config()
-    getToken()
+    constructor(){
+        require('dotenv').config()
+    }
+    getToken(){
+        return process.env.TOKEN;
+    }
 }
