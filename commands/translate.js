@@ -15,7 +15,7 @@ module.exports = new (class Command{
         let text = text_sections[text_sections.length-2]
 
         if(text.length > 20){
-            new BotError("Превышен лимит символов: 20",TYPE_ERROR.UNKNOW_COMMAND).send(msg.channel)
+            new BotError("Превышен лимит символов: 20",TYPE_ERROR.UNKNOW_COMMAND).send(message.channel)
             return;
         }
 

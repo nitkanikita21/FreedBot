@@ -16,7 +16,7 @@ class BotError{
     }
     send(channel){
         channel.send(new MessageEmbed()
-        .setAuthor(`${type}: ${msg}`,"https://discord.com/assets/baf44b1c1e3c284e9b263d08b426bdc5.svg")
+        .setAuthor(`${this.#type}: ${this.#msg}`,"https://cdn.discordapp.com/attachments/869677675403415564/870730516243038208/Error-512.png")
         .setColor("#fc513a")
         )
     }

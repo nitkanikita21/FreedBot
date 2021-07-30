@@ -1,7 +1,8 @@
 {
-    "start_settings":{
-        "prefixes":[
-            "!","?"
+    "start_settings": {
+        "prefixes": [
+            "!",
+            "?"
         ]
     }
 }
