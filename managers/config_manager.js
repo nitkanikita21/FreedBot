@@ -1,5 +1,5 @@
 
-module.exports = class ConfigManager {
+module.exports = new (class ConfigManager {
     #config = require("../config.json")
     constructor(){
         require('dotenv').config()
@@ -7,4 +7,7 @@ module.exports = class ConfigManager {
     getToken(){
         return process.env.TOKEN;
     }
-}
+    getPrefixes(){
+        return this.#config.start_settings.prefixes;
+    }
+})()
