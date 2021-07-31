@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
-const CommandManager = require("./commands_manager.js")
-const ConfigManager = require("./config_manager.js")
+const CommandManager = require("./CommandsManager.js")
+const ConfigManager = require("./ConfigManager.js")
 const { BotError, TYPE_ERROR } = require("../types/bor_error.js")
 CommandManager.LoadCommands()
 

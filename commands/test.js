@@ -2,7 +2,8 @@ module.exports = new (class Command{
     info = {
         name: "test",
         description: "this is test command",
-        example: "test <text>"
+        example: "test <text>",
+        category:"Base"
     } //Info object
     Use(message){ //On use command
         

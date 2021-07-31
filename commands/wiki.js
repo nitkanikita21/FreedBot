@@ -23,7 +23,8 @@ module.exports = new (class Command{
     info = {
         name: "wiki",
         description: `search wiki pages in https://${REGION}.wikipedia.org`,
-        example: "wiki <request>"
+        example: "wiki <request>",
+        category:"Fun"
     } //Info object
     async Use(message){ //On use command
         

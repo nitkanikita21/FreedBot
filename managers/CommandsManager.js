@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { logger } = require("../modules/LoggerModule");
 
 module.exports = new (class CommandManager{
     #commands = {};
@@ -9,7 +10,7 @@ module.exports = new (class CommandManager{
             let commandName = cmd.info.name; 
             this.#commands[commandName] = cmd;
 
-            console.log(commandName+" ✔")
+            logger.Log(__filename,`✔ Loaded ${commandName}`)
         })
     }
 

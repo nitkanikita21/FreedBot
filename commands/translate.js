@@ -6,7 +6,8 @@ module.exports = new (class Command{
     info = {
         name: "translate",
         description: "this is test command",
-        example: "test <text>"
+        example: "test <text>",
+        category:"Fun"
     } //Info object
     async Use(message){ //On use command
         let embed = new MessageEmbed();
